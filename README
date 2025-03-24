@@ -1,83 +1,53 @@
-42Cursus Minishell
+# 42Cursus Minishell
 
-This project is part of the 42cursus curriculum and consists of creating a simple UNIX shell. The purpose of this project is to understand how shells work, handle system calls, and implement key concepts like process control, file descriptors, and pipes.
-Table of Contents
+This project is part of the **42cursus** curriculum and consists of creating a simple UNIX shell. The purpose of this project is to understand how shells work, handle system calls, and implement key concepts like process control, file descriptors, and pipes.
 
-    Description
+## Table of Contents
 
-    Installation
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Built With](#built-with)
+- [License](#license)
 
-    Usage
+## Description
 
-    Features
+**Minishell** is a basic shell implementation that mimics the functionalities of a standard Unix shell. This project allows you to run commands, handle pipes, and redirect input/output, providing a solid foundation for understanding the inner workings of shell environments.
 
-    Built With
+### Key Features:
 
-    License
+- Command parsing and execution
+- Input/output redirection (`>`, `<`)
+- Piping between commands (`|`)
+- Environment variable handling
+- Signal handling (e.g., handling `SIGINT`)
 
-Description
+## Installation
 
-Minishell is a basic shell implementation that mimics the functionalities of a standard Unix shell. This project allows you to run commands, handle pipes, and redirect input/output, providing a solid foundation for understanding the inner workings of shell environments.
-Key Features:
+1. Clone the repository:
 
-    Command parsing and execution
+    ```bash
+    git clone https://github.com/SichuanVilly/42cursus_minishell.git
+    ```
 
-    Input/output redirection (>, <)
+2. Navigate to the project directory:
 
-    Piping between commands (|)
+    ```bash
+    cd 42cursus_minishell
+    ```
 
-    Environment variable handling
+3. Compile the project using `make`:
 
-    Signal handling (e.g., handling SIGINT)
-
-Installation
-
-    Clone the repository:
-
-git clone https://github.com/SichuanVilly/42cursus_minishell.git
-
-Navigate to the project directory:
-
-cd 42cursus_minishell
-
-Compile the project using make:
-
+    ```bash
     make
+    ```
 
-    This will create the minishell executable.
+    This will create the `minishell` executable.
 
-Usage
+## Usage
 
-To run the minishell, simply execute:
+To run the **minishell**, simply execute:
 
+```bash
 ./minishell
-
-You can now type commands into the shell, and it will execute them like a standard shell.
-Example:
-
-$ ./minishell
-$ echo "Hello, World!"
-Hello, World!
-$ ls -l | grep ".c"
--rw-r--r-- 1 user user 1234 file1.c
--rw-r--r-- 1 user user 5678 file2.c
-
-Features
-
-    Command Execution: Handles basic commands like ls, echo, pwd, and more.
-
-    Piping: Supports piping between commands to chain their outputs.
-
-    Redirection: Supports input and output redirection (>, <).
-
-    Environment Variables: Allows setting and accessing environment variables.
-
-    Signal Handling: Properly handles signals like SIGINT.
-
-Built With
-
-    C – The programming language used to implement the shell.
-
-    Make – The build automation tool used to compile the project.
-
-    System Calls – Utilized for command execution, file manipulation, and process control.
