@@ -1,3 +1,126 @@
-Me and Sefy-j wrote this program as a team.
-We wrote a shell taking bash as a reference.
+42Cursus Minishell
 
+This project is part of the 42cursus curriculum and consists of creating a simple UNIX shell. The purpose of this project is to understand how shells work, handle system calls, and implement key concepts like process control, file descriptors, and pipes.
+Table of Contents
+
+    Description
+
+    Installation
+
+    Usage
+
+    Features
+
+    Built With
+
+    License
+
+Description
+
+Minishell is a basic shell implementation that mimics the functionalities of a standard Unix shell. This project allows you to run commands, handle pipes, and redirect input/output, providing a solid foundation for understanding the inner workings of shell environments.
+Key Features:
+
+    Command parsing and execution
+
+    Input/output redirection (>, <)
+
+    Piping between commands (|)
+
+    Environment variable handling
+
+    Signal handling (e.g., handling SIGINT)
+
+Installation
+
+    Clone the repository:
+
+git clone https://github.com/SichuanVilly/42cursus_minishell.git
+
+Navigate to the project directory:
+
+cd 42cursus_minishell
+
+Compile the project using make:
+
+    make
+
+    This will create the minishell executable.
+
+Usage
+
+To run the minishell, simply execute:
+
+./minishell
+
+You can now type commands into the shell, and it will execute them like a standard shell.
+Example:
+
+$ ./minishell
+$ echo "Hello, World!"
+Hello, World!
+$ ls -l | grep ".c"
+-rw-r--r-- 1 user user 1234 file1.c
+-rw-r--r-- 1 user user 5678 file2.c
+
+Features
+
+    Command Execution: Handles basic commands like ls, echo, pwd, and more.
+
+    Piping: Supports piping between commands to chain their outputs.
+
+    Redirection: Supports input and output redirection (>, <).
+
+    Environment Variables: Allows setting and accessing environment variables.
+
+    Signal Handling: Properly handles signals like SIGINT.
+
+Built With
+
+    C – The programming language used to implement the shell.
+
+    Make – The build automation tool used to compile the project.
+
+    System Calls – Utilized for command execution, file manipulation, and process control.
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Feel free to modify this according to your project structure and any additional details you'd like to include. Let me know if you'd like further changes!
+You said:
+how can I copy this
+ChatGPT said:
+
+To copy and use the README content, follow these steps:
+
+    Select the Text:
+
+        Highlight the entire text of the README by clicking and dragging your mouse or pressing Ctrl + A (Windows/Linux) or Cmd + A (Mac) to select all of the text.
+
+    Copy the Text:
+
+        After highlighting the text, right-click and select Copy, or use the keyboard shortcuts:
+
+            Ctrl + C (Windows/Linux)
+
+            Cmd + C (Mac)
+
+    Create the README File:
+
+        Open your text editor (e.g., Notepad, Visual Studio Code, Sublime Text, etc.).
+
+        Create a new file and name it README.md.
+
+    Paste the Text:
+
+        Paste the copied text into the new README.md file using Ctrl + V (Windows/Linux) or Cmd + V (Mac).
+
+    Save the File:
+
+        Save the file in your project directory. Now you should have a README.md file ready to go.
+
+You can also use the following command in your terminal (if you're using a Unix-based system like Linux or macOS) to quickly create and edit the README.md file:
+
+echo "<paste the README text here>" > README.md
+
+This will create the file and insert the text directly. Let me know if you need more help!
