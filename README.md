@@ -9,7 +9,6 @@ This project is part of the **42cursus** curriculum and consists of creating a s
 - [Usage](#usage)
 - [Features](#features)
 - [Built With](#built-with)
-- [License](#license)
 
 ## Description
 
@@ -51,3 +50,10 @@ To run the **minishell**, simply execute:
 
 ```bash
 ./minishell
+```
+## Built With
+
+- **C** – The programming language used to implement the shell.
+- **Make** – The build automation tool used to compile the project.
+- **System Calls** – Utilized for command execution, file manipulation, and process control.
+
